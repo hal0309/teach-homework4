@@ -1,5 +1,10 @@
 class UserController < ApplicationController
   def index
-    @user = "Tanaka"
+    @users = [
+      "Tanaka",
+      "Takahashi",
+      "Yamada",
+      "Suzuki"
+    ]
   end
 end
