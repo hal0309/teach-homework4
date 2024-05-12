@@ -17,7 +17,7 @@ $ rails server
 ~~~
 `localhost:3000`にアクセスして、以下の画面が表示されていればOKです。
 
-![image](https://github.com/hal0309/teach-homework4/assets/133964545/1ddbb4d6-36b2-4549-ad3e-568e88f88cb4)
+![image](https://github.com/hal0309/teach-homework4/assets/133964545/5533346f-b5ee-44b6-af88-81b8d67a839e)
 
 ### 2. ユーザーリストの表示
 
@@ -41,4 +41,4 @@ $ rails server
 
 正しく実装した場合、以下のような表示になります。
 
-![image](https://github.com/hal0309/teach-homework4/assets/133964545/2eabf64a-0f9a-4fab-b030-9a896a846789)
+![image](https://github.com/hal0309/teach-homework4/assets/133964545/959bfbd1-7a70-4efb-8980-943ff38ba127)
