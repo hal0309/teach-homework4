@@ -5,3 +5,10 @@
     border: 1px solid black;
     border-radius: 5px;
 }
+
+#user-container2 {
+    font-weight:bold
+}
+.dtable_c{
+display: table-cell;
+}
