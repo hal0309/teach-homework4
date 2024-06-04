@@ -1,13 +1,11 @@
 <h1>User</h1>
 
 <% @users.each do |user| %>
-    <div class="dtable_c">
       <div class="user-container">
-        <p> 名前: <a id="user-container2"> <%= user[:name]%></a></p>
-        <p> 年齢: <a id="user-container2"> <%= user[:age]%></a></p>
+        <p> 名前: <b><%= user[:name]%></b></p></span>
+        <p> 年齢: <b><%= user[:age]%></b></p>
       </div>
-    </div>
 <% end %>
-
+<br>
 <%= link_to "topに戻る", "/" %>
 <p>それとも、<%= link_to "Google","https://www.google.com/" %>を見る？<%= link_to "Yahoo", "https://www.yahoo.co.jp/" %>を見る?</p>
