@@ -1,12 +1,11 @@
 <h1>User</h1>
 
 <% @users.each do |user| %>
-  <div class="user-container">
-    <p>名前: <%= user[:name] %></p>
-    <p>年齢: <%= user[:age] %></p>
-  </div>
+      <div class="user-container">
+        <p> 名前: <b><%= user[:name]%></b></p></span>
+        <p> 年齢: <b><%= user[:age]%></b></p>
+      </div>
 <% end %>
-
-<a href="/">topに戻る</a>
-
-<p>それとも、<a href="https://www.google.com/">Google</a>を見る？<a href="https://www.yahoo.co.jp/">Yahoo</a>を見る?</p>
+<br>
+<%= link_to "topに戻る", "/" %>
+<p>それとも、<%= link_to "Google","https://www.google.com/" %>を見る？<%= link_to "Yahoo", "https://www.yahoo.co.jp/" %>を見る?</p>
