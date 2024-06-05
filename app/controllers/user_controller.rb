@@ -19,4 +19,8 @@ class UserController < ApplicationController
       }
     ]
   end
+
+  def detail
+  end
+
 end
