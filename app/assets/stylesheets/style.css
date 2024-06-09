@@ -10,3 +10,12 @@
 .bold {
     font-weight: bold;
 }
+
+.user-container:hover {
+	background: #eeffff;
+}
+
+.url {
+    text-decoration: none; /* リンクに出てくる下線を無効にする*/
+    color: blue ;
+}
