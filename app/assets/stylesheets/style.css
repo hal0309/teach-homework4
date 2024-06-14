@@ -1,3 +1,16 @@
+/* -------------- title -------------- */
+.title-container {
+    text-align: center;
+}
+.title {
+    margin: 0 auto;
+    padding: 0 30px;
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+}
+
+/* -------------- user -------------- */
 .user-container {
     width: fit-content;
     margin: 10px;
@@ -6,16 +19,15 @@
     border-radius: 5px;
     display: inline-block;
 }
-
 .user-container:hover {
     background-color: #eeffff;
 }
-
 .user-container-link {
     text-decoration: none;
     color: black;
 }
 
+/* -------------- common -------------- */
 .bold {
     font-weight: bold;
 }
