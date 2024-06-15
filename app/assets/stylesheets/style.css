@@ -5,6 +5,7 @@
     border: 1px solid black;
     border-radius: 5px;
     display: inline-block;
+    color: black ;
 }
 
 .bold {
@@ -15,7 +16,6 @@
 	background: #eeffff;
 }
 
-.url {
-    text-decoration: none; /* リンクに出てくる下線を無効にする*/
-    color: blue ;
+.claass{
+    display: inline-block;
 }
