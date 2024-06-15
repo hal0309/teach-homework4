@@ -5,8 +5,17 @@
     border: 1px solid black;
     border-radius: 5px;
     display: inline-block;
+    color: black ;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.user-container:hover {
+	background: #eeffff;
+}
+
+.claass{
+    display: inline-block;
 }

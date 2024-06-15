@@ -1,10 +1,12 @@
 <h1>User</h1>
 
 <% @users.each do |user| %>
-  <div class="user-container">
-    <p>名前: <span class="bold"><%= user[:name] %></span></p>
-    <p>年齢: <span class="bold"><%= user[:age] %></span></p>
-  </div>
+  <%= link_to "/user/detail" , class: 'claass' do %>
+    <div class="user-container">
+      <p>名前: <span class="bold"><%= user[:name] %></span></p>
+      <p>年齢: <span class="bold"><%= user[:age] %></span></p>
+    </div>
+  <% end %>
 <% end %>
 
 <p><%= link_to "topに戻る", "/" %></p>
