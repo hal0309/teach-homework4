@@ -1,3 +1,9 @@
+# Ruby on Rails + Spring Boot 演習
+
+## 2024年6月9日
+
+index.html.erb
+~~~ html
 <h1>User</h1>
 
 <% @users.each do |user| %>
@@ -12,3 +18,4 @@
 <p><%= link_to "topに戻る", "/" %></p>
 
 <p>それとも、<%= link_to "Google", "https://www.google.com/"%>を見る？<%= link_to "Yahoo", "https://www.yahoo.co.jp/"%>を見る?</p>
+~~~

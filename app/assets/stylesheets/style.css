@@ -7,6 +7,15 @@
     display: inline-block;
 }
 
+.user-container:hover {
+    background-color: #eeffff;
+}
+
+.user-container-link {
+    text-decoration: none;
+    color: black;
+}
+
 .bold {
     font-weight: bold;
 }
