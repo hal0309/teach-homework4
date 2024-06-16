@@ -9,6 +9,7 @@
 尚、名前の部分は太字にしてください。
 
 以下は、`/user/detail?name=Yamada`にアクセスした際の結果です。
+
 ![image](https://github.com/hal0309/teach-homework4/assets/133964545/60811a3e-edba-4697-b219-01e8034dcab0)
 
 
