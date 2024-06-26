@@ -10,6 +10,15 @@ header {
     margin-bottom: 50px;
     border-bottom: 1px solid black;
 }
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav li {
+    list-style: none;
+    margin-left: 10px;
+}
 
 /* -------------- title -------------- */
 .title-container {
