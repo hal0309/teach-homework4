@@ -1,9 +1,6 @@
 <div class="parent">
-　<span class ="user">
-　　<h1>User</h1>
-　</span>
+　<h1 class="user">User</h1>
 </div>
-<br>
 <% @users.each do |user| %>
   <%= link_to "./detail?name=#{user[:name]}&age=#{user[:age]}", class: "user-container-link" do %>
     <div class="user-container">

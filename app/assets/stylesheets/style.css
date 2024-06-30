@@ -5,7 +5,10 @@
 .user {
     border: 1px solid black;
     display:inline-block;
-        width: 120px;
+    /* padding-left:30px;*/
+    /* padding-right:30px; */
+    /* padding:50px 30px 0 30px;*/
+    padding:50px 30px;
 }
 
 .user-container {
