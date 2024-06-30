@@ -21,6 +21,8 @@ class UserController < ApplicationController
   end
 
   def detail
+    @name = params[:name]
+    @age = params[:age]
   end
 
 end

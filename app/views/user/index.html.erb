@@ -1,7 +1,11 @@
-<h1>User</h1>
+<div class="title-container">
+  <h1 class="title">User</h1>
+</div>
+
+
 
 <% @users.each do |user| %>
-  <%= link_to "./detail", class: "user-container-link" do %>
+  <%= link_to "./detail?name=#{user[:name]}&age=#{user[:age]}", class: "user-container-link" do %>
     <div class="user-container">
       <p>名前: <span class="bold"><%= user[:name] %></span></p>
       <p>年齢: <span class="bold"><%= user[:age] %></span></p>
