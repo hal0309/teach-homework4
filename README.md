@@ -1,5 +1,63 @@
 # Ruby on Rails + Spring Boot 演習
 
+## 2024年7月7日 課題
+
+今回から、Rubyを辞め、html, css, javascriptのみでの開発に移行します。
+そのため、全ての作業を`_withoutRuby`ディレクトリ内部で完結してください。
+
+### 1. css, JavaScriptの読み込み
+以前までフレームワークを使用していたため、cssやJavaScriptの読み込みが自動で行われていました。
+
+通常は自分でパスを指定して読み込む必要があります。
+
+`index.html`を参考にして、`detail.html`内でもcssとJavaScriptを読み込むようにしてください。
+
+この時点でページの見た目が前回と同様になったことを確認してください。
+
+### 2. ページタイトルの編集
+htmlファイルでは、`<head>`タグ内で様々なプロパティを設定することができます。
+
+例えば、`<title>`タグを使用することで、タブに表示されるタイトルを変更できます。現状では下記のように`Homework4`となっています。
+
+![image](https://github.com/hal0309/teach-homework4/assets/133964545/03f12c64-d627-4a0e-b6b5-e5ad43509960)
+
+
+`User`ページではタイトルを`ユーザー一覧`に、`Detail`ページではタイトルを`ユーザー詳細`に変更してください。
+
+### 3. JavaScriptの基礎
+JavaScriptを使用して、ページ読み込み時に現在時刻を動的に取得してください。
+
+`index.html`の下部にある、
+
+~~~ html
+<p>今の時間は<span id="time">未指定</span>です。</p>
+~~~
+
+の、idを用いて、Javascriptでspanタグを指定し、内部の文字列を現在時刻に置き換える。
+
+Javascriptでidを基にオブジェクトを指定するには以下の様に記述します。
+~~~ javascript
+val element = document.getElementById('hoge');
+~~~
+
+指定したオブジェクトの中身を変更するには以下の様に記述します。
+~~~ javascript
+element.innerHTML = "hogehoge";
+~~~
+
+結果として以下のようになります。
+![image](https://github.com/hal0309/teach-homework4/assets/133964545/c12c7e15-5305-43fb-8688-221452125094)
+
+### 4. 成果物
+今回のページ全体は以下のようになっていることを確認してください。
+
+
+| `user/index`                                                                                               | `user/detail`                                                                                              |
+|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| ![image](https://github.com/hal0309/teach-homework4/assets/133964545/f704b9ad-e1f2-4efc-a931-841fd6ab6b46) | ![image](https://github.com/hal0309/teach-homework4/assets/133964545/9b260d56-b7f9-43e4-afd0-7bbcb4cd567d) |
+|
+
+
 ## 2024年6月31日 課題
 
 ### 1. ヘッダーの作成
