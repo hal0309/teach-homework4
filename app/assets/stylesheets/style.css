@@ -11,6 +11,12 @@ header {
     border-bottom: 1px solid black;
 }
 
+.header-nav{
+    display: grid;
+    grid-template-columns: 40px 45px 90px;
+    justify-content: flex-end;
+}
+
 /* -------------- title -------------- */
 .title-container {
     text-align: center;
