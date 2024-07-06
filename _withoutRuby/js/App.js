@@ -16,3 +16,5 @@ const timeString = `${hours}時${minutes}分`; // 現在時刻の文字列
 
 
 /* todo: ここに処理を追加(現在時刻の文字列は上記を使用してください) */
+const element = document.getElementById('time');
+element.innerHTML = timeString;
