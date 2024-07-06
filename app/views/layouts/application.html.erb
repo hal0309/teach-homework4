@@ -13,9 +13,11 @@
   <body>
     <header>
         <h1 class="header-title">Homework4</h1>
-        <ul class="header-nav">
-          <li><%= link_to "Top", "/" %></li>
-        </ul>
+        <span class="header-nav">
+          <%= link_to "Top", "/" %>
+          <%= link_to "User", "./index" %>
+          <%= link_to "User Detail", "./detail" %>
+        </span>
     </header>
     <%= yield %>
   </body>

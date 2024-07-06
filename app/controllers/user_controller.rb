@@ -23,6 +23,8 @@ class UserController < ApplicationController
   def detail
     @name = params[:name]
     @age = params[:age]
+  if @name.blank? && @age.blank?
+    @name = "未確認ユーザー"
   end
-
+  end
 end
