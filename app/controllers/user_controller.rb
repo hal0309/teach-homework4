@@ -23,6 +23,13 @@ class UserController < ApplicationController
   def detail
     @name = params[:name]
     @age = params[:age]
+
+    if @name.nil? || @age.nil?
+      @user_text = "未確認ユーザー"
+      return
+    end
+
+    @user_text = "#{@name}(#{@age})"
   end
 
 end
