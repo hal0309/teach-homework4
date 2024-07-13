@@ -1,5 +1,74 @@
 # Ruby on Rails + Spring Boot 演習
 
+## 2024年7月15日 演習
+
+### 1. ページの作成
+新しいページとして、電卓のページ(`calc.html`)を作成し、`index.html`と同じディレクトリに配置してください。
+
+ファイルの内容は以下のテンプレートに加えて、下記の処理を追加してください。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<header>
+    <h1 class="header-title">Homework4</h1>
+    <ul class="header-nav">
+        <li><a href="./index.html">User</a></li>
+        <li><a href="./detail.html">User Detail</a></li>
+        <li><a href="./calc.html">Calculator</a></li>
+    </ul>
+</header>
+
+<div class="title-container">
+    <h1 class="title" id="title">Calc</h1>
+</div>
+
+<p>数値を入力</p>
+<div class="calculator">
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+</div>
+
+<p>演算子を選択</p>
+<div class="calc-button-container">
+    <button id="plusBtn">+</button>
+    <button id="minusBtn">-</button>
+    <button id="multiplyBtn">×</button>
+    <button id="divideBtn">÷</button>
+</div>
+
+<p>結果</p>
+<div id="result" class="result"></div>
+</body>
+</html>
+```
+
+追記する処理
+- タブに表示されるタイトルを`電卓`に変更
+- `sytle.css`を読み込む
+- `Calc.js`を読み込む
+
+### 2. 演算処理の作成
+現状、数値を2箇所に入力した後、`＋`ボタンを押すと、以下のように合計値が表示されるようになっています。
+
+![image](https://github.com/user-attachments/assets/1a3e4df9-3c62-45ce-9214-b233aff196da)
+
+`-`, `×`, `÷`ボタンに関しても押した際にそれぞれの計算結果が表示されるようにしてください。
+
+
+### 3. エラー処理の作成
+現状、数値を入力せずにボタンを押しても何も起きません。
+ボタンを押した際に数値に不備があると、以下のように結果の欄に`数値を入力してください`とエラーメッセージが表示されるようにしてください。
+
+![image](https://github.com/user-attachments/assets/4b972bec-213c-444a-b3ea-fb7fae41b10e)
+
+
+
+
 ## 2024年7月7日 課題
 
 今回から、Rubyを辞め、html, css, javascriptのみでの開発に移行します。
