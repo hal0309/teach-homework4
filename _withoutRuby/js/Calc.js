@@ -45,7 +45,10 @@ function div() {
 
     if (isNaN(num1) || isNaN(num2)) {
         result = "数値を入力してください";
-    }else {
+    }else if (num2 === 0) {
+        result = "0で割ることはできません";
+    }
+    else {
         result = num1 / num2;
     }
     document.getElementById("result").textContent = result;
