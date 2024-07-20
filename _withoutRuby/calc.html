@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>電卓</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1 class="header-title">Homework4</h1>
+    <ul class="header-nav">
+        <li><a href="./index.html">User</a></li>
+        <li><a href="./detail.html">User Detail</a></li>
+        <li><a href="./calc.html">Calculator</a></li>
+    </ul>
+</header>
+
+<div class="title-container">
+    <h1 class="title" id="title">Calc</h1>
+</div>
+
+<p>数値を入力</p>
+<div class="calculator">
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+</div>
+
+<p>演算子を選択</p>
+<div class="calc-button-container">
+    <button id="plusBtn">+</button>
+    <button id="minusBtn">-</button>
+    <button id="multiplyBtn">×</button>
+    <button id="divideBtn">÷</button>
+</div>
+
+<p>結果</p>
+<div id="result" class="result"></div>
+<script src="./js/Calc.js"></script>
+</body>
+</html>
