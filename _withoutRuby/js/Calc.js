@@ -40,9 +40,11 @@ function divide() {
     const num1 = parseFloat(document.getElementById("num1").value);
     const num2 = parseFloat(document.getElementById("num2").value);
 
-    if (!isNaN(num1) && !isNaN(num2)) {
-        let result = num1 / num2;
-        document.getElementById("result").textContent = result;
+    if (num1 == 0 || num2 == 0) {
+      document.getElementById("result").textContent = '0以外を入力してください';
+    }else if (!isNaN(num1) && !isNaN(num2)) {
+      let result = num1 / num2;
+      document.getElementById("result").textContent = result;
     }else{
       document.getElementById("result").textContent = '値を入力してください';
     }
