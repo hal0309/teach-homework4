@@ -1,5 +1,46 @@
 # Ruby on Rails + Spring Boot 演習
 
+## 2024年7月21日 演習
+
+### 1. 関数のリファクタリング
+現状、演算処理は4つの関数に分けられ、以下のようにそれぞれイベントを追加している。
+```javascript
+// クリックイベントリスナーを設定
+plusBtn.addEventListener("click", add);
+minusBtn.addEventListener("click", sub);
+multiplyBtn.addEventListener("click", mul);
+divideBtn.addEventListener("click", div);
+```
+
+`add`、`sub`、`mul`、`div`の4つの関数は共通する部分も多く、別々に定義するのは冗長です。
+そのため、これらの関数を1つの関数にまとめ、引数を追加して、演算子に応じた処理を行うようにしてください。
+```javascript
+// クリックイベントリスナーを設定
+plusBtn.addEventListener("click", () => calc("add"));
+minusBtn.addEventListener("click", () => calc("sub"));
+multiplyBtn.addEventListener("click", () => calc("mul"));
+divideBtn.addEventListener("click", () => calc("div"));
+```
+
+`add`、`sub`、`mul`、`div`の4つを削除し、`calc`関数を考えて定義してください。
+
+
+### 2. 計算結果の履歴表示
+現状、計算結果は`id="result"`のdivタグに1つだけ表示されています。
+これを、ページ読み込み時からの計算結果が全て履歴として表示されるようにしてください。
+
+以下は、「＋」、「-」、「×」、「÷」、「＋」の順にボタンを押した際の結果です。
+
+![image](https://github.com/user-attachments/assets/7050ad11-765b-4879-bb0a-6a5628f66d84)
+
+
+
+### 3. 履歴の表示形式
+履歴が少し見づらいため、以下のように答えの部分だけ太字になるようにしましょう。
+
+![image](https://github.com/user-attachments/assets/700b61ed-bbd8-4aca-80a9-c92bef20af52)
+
+
 ## 2024年7月15日 演習
 
 ### 1. ページの作成
