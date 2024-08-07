@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>日誌</title>
+    <title>ユーザー一覧</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header>
     <h1 class="header-title">Homework4</h1>
     <ul class="header-nav">
@@ -18,24 +19,13 @@
 </header>
 
 <div class="title-container">
-    <h1 class="title" id="title">Diary</h1>
+    <h1 class="title" id="title">Random Dog</h1>
 </div>
 
-<p>日付</p>
-<span><input type="number" id="month">月<input type="number" id="day">日</span>
-
-<p>評価</p>
-<input type="number" id="eval">
-
-<button id="saveBtn">保存</button>
-
-
-<p> 日誌一覧 </p>
-<div id="diaryList" class="diary-list">
-
-
+<div class="dog-container" id="dogContainer">
+    <img src="https://random.dog/8c9dd457-5907-4fd4-a825-f8c576fe1284.jpeg" id="dogImage">
 </div>
 
-<script src="./js/Diary.js"></script>
+<script src="./js/Dog.js"></script>
 </body>
 </html>
