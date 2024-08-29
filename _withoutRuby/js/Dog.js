@@ -12,7 +12,6 @@ function callDogApi() {
         let resultElement = document.getElementById("dogImage");
         resultElement.src = data.url;
 
-//        alert("画像のサイズは" + data.fileSizeBytes + "です");
     };
 
     // リクエストの送信
